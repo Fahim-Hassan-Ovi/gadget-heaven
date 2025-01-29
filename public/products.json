@@ -1,0 +1,206 @@
+[
+    {
+        "product_id": 1,
+        "product_title": "iPhone 15 Pro",
+        "product_image": "https://i.ibb.co.com/Y7DWT4xt/iphone-15-pro.jpg",
+        "category": "smartphone",
+        "price": 999,
+        "description": "The iPhone 15 Pro features a titanium design, A17 Pro chip, and an advanced camera system.",
+        "specifications": [
+            "6.1-inch Super Retina XDR display",
+            "A17 Pro chip",
+            "48MP Main camera",
+            "Titanium design",
+            "USB-C charging"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 2,
+        "product_title": "Samsung Galaxy S23 Ultra",
+        "product_image": "https://i.ibb.co.com/RkFrVQHx/Samsung-Galaxy-S23-Ultra.jpg",
+        "category": "smartphone",
+        "price": 1199,
+        "description": "The Samsung Galaxy S23 Ultra boasts a 200MP camera, Snapdragon 8 Gen 2 chip, and S Pen support.",
+        "specifications": [
+            "6.8-inch Dynamic AMOLED display",
+            "200MP Wide camera",
+            "Snapdragon 8 Gen 2",
+            "5000mAh battery",
+            "S Pen included"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 3,
+        "product_title": "Google Pixel 8 Pro",
+        "product_image": "https://i.ibb.co.com/1Y2WvZ6D/Google-Pixel-8-Pro.jpg",
+        "category": "smartphone",
+        "price": 899,
+        "description": "The Google Pixel 8 Pro offers a Tensor G3 chip, 50MP camera, and advanced AI features.",
+        "specifications": [
+            "6.7-inch OLED display",
+            "Tensor G3 chip",
+            "50MP main camera",
+            "5050mAh battery",
+            "Android 14"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 4,
+        "product_title": "OnePlus 11",
+        "product_image": "https://i.ibb.co.com/B2zd0wmG/One-Plus-11.jpg",
+        "category": "smartphone",
+        "price": 699,
+        "description": "The OnePlus 11 features a Snapdragon 8 Gen 2 chip, 50MP camera, and Hasselblad collaboration.",
+        "specifications": [
+            "6.7-inch AMOLED display",
+            "Snapdragon 8 Gen 2",
+            "50MP main camera",
+            "5000mAh battery",
+            "Hasselblad camera tuning"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 5,
+        "product_title": "Xiaomi 13 Pro",
+        "product_image": "https://i.ibb.co.com/zHRmsLfM/Xiaomi-13-Pro.jpg",
+        "category": "smartphone",
+        "price": 799,
+        "description": "The Xiaomi 13 Pro offers a Leica camera system, Snapdragon 8 Gen 2 chip, and 120W fast charging.",
+        "specifications": [
+            "6.73-inch AMOLED display",
+            "Snapdragon 8 Gen 2",
+            "50.3MP Leica camera",
+            "4820mAh battery",
+            "120W fast charging"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 6,
+        "product_title": "Sony Xperia 1 V",
+        "product_image": "https://i.ibb.co.com/qXnBGwF/Sony-Xperia-1-V.jpg",
+        "category": "smartphone",
+        "price": 1299,
+        "description": "The Sony Xperia 1 V features a 4K OLED display, Snapdragon 8 Gen 2 chip, and advanced camera system.",
+        "specifications": [
+            "6.5-inch 4K OLED display",
+            "Snapdragon 8 Gen 2",
+            "48MP main camera",
+            "5000mAh battery",
+            "Cinema-grade video recording"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": 7,
+        "product_title": "MacBook Pro 16-inch",
+        "product_image": "https://i.ibb.co.com/fdGywprY/M1-X-16-inch-Mac-Book-Pro.webp",
+        "category": "laptop",
+        "price": 2499,
+        "description": "The MacBook Pro 16-inch features an M2 Max chip, Liquid Retina XDR display, and up to 96GB RAM.",
+        "specifications": [
+            "16.2-inch Liquid Retina XDR display",
+            "M2 Max chip",
+            "Up to 96GB RAM",
+            "1TB SSD storage",
+            "Up to 22 hours battery life"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": 8,
+        "product_title": "Dell XPS 15",
+        "product_image": "https://i.ibb.co.com/VYK32MTy/Dell-XPS-15.jpg",
+        "category": "laptop",
+        "price": 1999,
+        "description": "The Dell XPS 15 offers a 12th Gen Intel Core i7 processor, 15.6-inch OLED display, and premium design.",
+        "specifications": [
+            "15.6-inch OLED display",
+            "Intel Core i7-12700H",
+            "16GB RAM",
+            "512GB SSD",
+            "Windows 11 Pro"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 9,
+        "product_title": "Apple Watch Ultra",
+        "product_image": "https://i.ibb.co.com/1JryKh6T/Apple-Watch-Ultra.webp",
+        "category": "smartwatch",
+        "price": 799,
+        "description": "The Apple Watch Ultra is designed for extreme conditions with a rugged titanium case and advanced health features.",
+        "specifications": [
+            "49mm titanium case",
+            "Retina display",
+            "GPS and cellular",
+            "Up to 36 hours battery life",
+            "Water resistant to 100m"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 10,
+        "product_title": "Samsung Galaxy Watch 6 Classic",
+        "product_image": "https://i.ibb.co.com/twPjxqjV/Samsung-Galaxy-Watch-6-Classic.webp",
+        "category": "smartwatch",
+        "price": 399,
+        "description": "The Samsung Galaxy Watch 6 Classic features a rotating bezel, advanced health tracking, and long battery life.",
+        "specifications": [
+            "47mm stainless steel case",
+            "Rotating bezel",
+            "ECG and blood pressure monitoring",
+            "Up to 40 hours battery life",
+            "Water resistant to 50m"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 11,
+        "product_title": "iPad Pro 12.9-inch",
+        "product_image": "https://i.ibb.co.com/8LnVqhVZ/i-Pad-Pro-12-9-inch.jpg",
+        "category": "tablet",
+        "price": 1099,
+        "description": "The iPad Pro 12.9-inch features an M2 chip, Liquid Retina XDR display, and support for Apple Pencil.",
+        "specifications": [
+            "12.9-inch Liquid Retina XDR display",
+            "M2 chip",
+            "Up to 2TB storage",
+            "Face ID",
+            "Supports Apple Pencil and Magic Keyboard"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 12,
+        "product_title": "Samsung Galaxy Tab S9 Ultra",
+        "product_image": "https://i.ibb.co.com/rKSDxkKS/Samsung-Galaxy-Tab-S9-Ultra.jpg",
+        "category": "tablet",
+        "price": 1199,
+        "description": "The Samsung Galaxy Tab S9 Ultra offers a 14.6-inch AMOLED display, Snapdragon 8 Gen 2 chip, and S Pen support.",
+        "specifications": [
+            "14.6-inch AMOLED display",
+            "Snapdragon 8 Gen 2",
+            "12GB RAM",
+            "1TB storage",
+            "S Pen included"
+        ],
+        "availability": true,
+        "rating": 4.7
+    }
+]
