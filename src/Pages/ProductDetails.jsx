@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import StarRating from "../Components/StarRating";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
+import { addCart } from "../Utilities";
 const ProductDetails = () => {
     const data = useLoaderData();
     const { id } = useParams();
@@ -14,6 +15,11 @@ const ProductDetails = () => {
     }, [data, id]);
 
     const { rating, availability, specifications, description, price, product_image, product_title } = product;
+
+    // handle cart by click
+    const handleCart = (product) =>{
+        addCart(product);
+    } 
     return (
         <div className="min-h-screen">
             <div className="md:px-[210px] pt-8 justify-center items-center text-center bg-[#9538E2] md:h-[430px] rounded-b-2xl md:relative">
@@ -46,7 +52,7 @@ const ProductDetails = () => {
                         <StarRating rating={rating} />
                         <button className="btn-sm rounded-full">{rating}</button>
                         </div>
-                        <div className="flex items-center gap-8">
+                        <div onClick={()=> handleCart(product)} className="flex items-center gap-8">
                         <button className="btn w-full h-[52px] rounded-full bg-[#9538E2] text-white font-bold
                         "><div className="flex justify-between gap-6 items-center">
                             <span>Add To Card</span>
