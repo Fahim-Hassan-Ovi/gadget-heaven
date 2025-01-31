@@ -61,10 +61,10 @@ const Cart = () => {
                         <h3 className="font-bold text-2xl my-5">Payment Successfully </h3>
                         <div className="text-center">
                             <p className="text-gray-400">Thanks for purchasing. </p>
-                            <p className="text-gray-400">Total: ${totalCost} </p>
+                            <p className="text-gray-400 mb-4">Total: ${totalCost} </p>
                         </div>
                        
-                            <NavLink to='/' id="btn-continue" className="btn bg-[] px-16 btn-md hover:bg-primary transition-colors ease-in duration-300 text-gray-400"
+                            <NavLink to='/' id="btn-continue" className="btn bg-gray-200 px-16 btn-md w-full text-black font-bold hover:bg-[#9538E2] transition-colors ease-in duration-300"
                             onClick={()=>document.getElementById('my_modal_1').closest()}
                             >Close</NavLink>
                     </form>

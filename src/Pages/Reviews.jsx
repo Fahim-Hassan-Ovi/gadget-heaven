@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Review from "../Components/Review";
+import { Helmet } from "react-helmet";
 
 const Reviews = () => {
     const data = useLoaderData();
@@ -10,6 +11,11 @@ const Reviews = () => {
     },[data])
     return (
         <div className="">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Review | Gadget Heaven</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className="md:px-[210px] pt-8 justify-center items-center text-center bg-[#9538E2]   ">
                 <h1 className="text-5xl font-bold text-white">Review</h1>
                 <p className="py-6 text-white">

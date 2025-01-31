@@ -4,6 +4,7 @@ import StarRating from "../Components/StarRating";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { addCart, addWishlist } from "../Utilities";
+import { Helmet } from "react-helmet";
 const ProductDetails = () => {
     const data = useLoaderData();
     const { id } = useParams();
@@ -34,6 +35,11 @@ const ProductDetails = () => {
     return (
         <div className="min-h-screen">
             <div className="md:px-[210px] pt-8 justify-center items-center text-center bg-[#9538E2] md:h-[430px] rounded-b-2xl md:relative">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Product Details | Gadget Heaven</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
                 <h1 className="text-5xl font-bold text-white">Product Details</h1>
                 <p className="py-6 text-white">
                     Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
