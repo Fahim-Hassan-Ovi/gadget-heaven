@@ -1,8 +1,29 @@
 import { FaRegHeart } from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
+import { getAllCarts, getAllWishlist } from "../Utilities";
+import { useEffect, useState } from "react";
 const Navbar = () => {
     const { pathname } = useLocation();
     const isNotHome = pathname !== "/";
+    const [cartCount, setCartCount] = useState(0);
+  const [wishlistCount, setWishlistCount] = useState(0);
+// Function to update counts from local storage
+const updateCounts = () => {
+    const cart = getAllCarts();
+    const wishlist = getAllWishlist();
+    setCartCount(cart.length);
+    setWishlistCount(wishlist.length);
+  };
+
+  useEffect(() => {
+    updateCounts(); // Initial load
+    window.addEventListener("storage", updateCounts); // Listen for storage changes
+
+    return () => {
+      window.removeEventListener("storage", updateCounts); // Cleanup event listener
+    };
+  }, []);
+
     return (
         <div className="md:mx-6 md:mt-6 ">
             <div className={`navbar md:px-[106px] ${isNotHome ? " bg-white" : " bg-[#9538E2]  rounded-t-2xl"} `}>
@@ -58,7 +79,11 @@ const Navbar = () => {
                                         strokeWidth="2"
                                         d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
-                                <span className={`badge badge-sm indicator-item bg-transparent border-none ${isNotHome? "text-black" : " text-violet-300"}`}>8</span>
+                                {
+                                    cartCount>0 && (
+                                        <span className={`badge badge-sm indicator-item bg-transparent border-none ${isNotHome? "text-black" : " text-violet-300"}`}>{cartCount}</span>
+                                    )
+                                }
                             </div>
                         </div>
                         <div
@@ -77,7 +102,11 @@ const Navbar = () => {
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                             <div className={`indicator ${isNotHome? "text-black" : " text-violet-300"}`}>
                                 <FaRegHeart size={20} />
-                                <span className={`badge badge-sm indicator-item bg-transparent border-none ${isNotHome? "text-black" : " text-violet-300"}`}>8</span>
+                                {
+                                    wishlistCount>0 && (
+                                        <span className={`badge badge-sm indicator-item bg-transparent border-none ${isNotHome? "text-black" : " text-violet-300"}`}>{wishlistCount}</span>
+                                    )
+                                }
                             </div>
                         </div>
                         <div

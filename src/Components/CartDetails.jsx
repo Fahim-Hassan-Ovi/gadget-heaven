@@ -1,4 +1,5 @@
 import { IoIosCloseCircleOutline } from "react-icons/io";
+// eslint-disable-next-line react/prop-types
 const CartDetails = ({product}) => {
     const {product_title, product_image, price, description} = product || {};
     return (

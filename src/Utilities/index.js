@@ -40,4 +40,9 @@ const addWishlist = product =>{
     toast.success("Successfully added to your wishlist");
 }
 
-export{addCart, getAllCarts, addWishlist, getAllWishlist};
+// clear local storage
+function clearCart() {
+    localStorage.removeItem("cart");
+  }
+
+export{addCart, getAllCarts, addWishlist, getAllWishlist, clearCart};
