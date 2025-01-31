@@ -4,7 +4,7 @@
 gadget-paradise.surge.sh
 
 ### Requirement Document
-
+https://docs.google.com/document/d/1zsos_u1kNOZbzkjrEksCXrPJlaA6JFhOFl6gwpAhtwo/edit?tab=t.0
 
 ### Project Overview
 
