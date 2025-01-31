@@ -1,0 +1,38 @@
+[
+    {
+      "customer_id": 101,
+      "customer_name": "Alice Johnson",
+      "customer_review": "The new iPhone 15 Pro is amazing! The camera quality is top-notch, and the battery life is much better than previous models.",
+      "customer_img": "https://randomuser.me/api/portraits/women/1.jpg"
+    },
+    {
+      "customer_id": 102,
+      "customer_name": "Mark Thompson",
+      "customer_review": "Bought the Dell XPS 15, and it's a beast! The performance is excellent, and the 4K display is stunning.",
+      "customer_img": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+      "customer_id": 103,
+      "customer_name": "Sophia Martinez",
+      "customer_review": "I love my new Samsung Galaxy Watch 6! The health tracking features are very accurate, and the battery lasts for days.",
+      "customer_img": "https://randomuser.me/api/portraits/women/3.jpg"
+    },
+    {
+      "customer_id": 104,
+      "customer_name": "James Wilson",
+      "customer_review": "The Sony WH-1000XM5 headphones have the best noise cancellation I've ever experienced. Perfect for travel!",
+      "customer_img": "https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    {
+      "customer_id": 105,
+      "customer_name": "Emily Davis",
+      "customer_review": "The new iPad Air is lightweight and powerful. Works great for both work and entertainment!",
+      "customer_img": "https://randomuser.me/api/portraits/women/5.jpg"
+    },
+    {
+        "customer_id": 106,
+        "customer_name": "Daniel Roberts",
+        "customer_review": "Recently got this gadget, and it has been fantastic! The build quality is solid, and the features are exactly what I needed.",
+        "customer_img": "https://randomuser.me/api/portraits/men/6.jpg"
+      }
+  ]
