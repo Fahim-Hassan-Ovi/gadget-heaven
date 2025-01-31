@@ -3,11 +3,17 @@ import { useLoaderData, useParams } from "react-router-dom";
 import StarRating from "../Components/StarRating";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
-import { addCart } from "../Utilities";
+import { addCart, addWishlist } from "../Utilities";
 const ProductDetails = () => {
     const data = useLoaderData();
     const { id } = useParams();
     const [product, setProduct] = useState({});
+    const [wishlistProduct, setWishlistProduct] = useState({});
+
+    useEffect(() => {
+        const singleWishlist = data.find(product => product.product_id === parseInt(id));
+        setWishlistProduct(singleWishlist);
+    }, [data, id]);
 
     useEffect(() => {
         const singleProduct = data.find(product => product.product_id === parseInt(id));
@@ -20,6 +26,11 @@ const ProductDetails = () => {
     const handleCart = (product) =>{
         addCart(product);
     } 
+    // handle wishlist by click
+    const handleWishlist = (product) =>{
+      
+        addWishlist(product);
+    }
     return (
         <div className="min-h-screen">
             <div className="md:px-[210px] pt-8 justify-center items-center text-center bg-[#9538E2] md:h-[430px] rounded-b-2xl md:relative">
@@ -52,14 +63,14 @@ const ProductDetails = () => {
                         <StarRating rating={rating} />
                         <button className="btn-sm rounded-full">{rating}</button>
                         </div>
-                        <div onClick={()=> handleCart(product)} className="flex items-center gap-8">
-                        <button className="btn w-full h-[52px] rounded-full bg-[#9538E2] text-white font-bold
+                        <div className="flex items-center gap-8">
+                        <button onClick={()=> handleCart(product)} className="btn w-full h-[52px] rounded-full bg-[#9538E2] text-white font-bold
                         "><div className="flex justify-between gap-6 items-center">
                             <span>Add To Card</span>
                             <MdOutlineShoppingCart size={20} />
                         </div>
                         </button>
-                        <button className="btn btn-circle"><FaRegHeart /></button>
+                        <button onClick={()=>handleWishlist(wishlistProduct)} className="btn btn-circle"><FaRegHeart /></button>
                         </div>
                     </div>
                 </div>

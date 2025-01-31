@@ -18,7 +18,7 @@ const Cart = () => {
                     <p className="text-bold text-xl">Total cost : test value</p>
                     <button className="btn h-[52px] rounded-full bg-transparent text-[#9538E2] border border-[#9538E2] font-bold
                         "><div className="flex justify-between gap-6 items-center">
-                            <span>Add To Card</span>
+                            <span>Sort By Price</span>
                             <FaSortAmountDown size={20}/>
                         </div>
                     </button>

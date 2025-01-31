@@ -20,4 +20,24 @@ const addCart = product => {
     toast.success('Successfully Added To The Cart');
 }
 
-export{addCart, getAllCarts};
+// get all wishlist product
+const getAllWishlist = () =>{
+    const all = localStorage.getItem('wishlist');
+    if(all){
+        const carts = JSON.parse(all);
+        return carts;
+    }
+    else{
+        return [];
+    }
+}
+
+// add a wishlist product
+const addWishlist = product =>{
+    const wishlists = getAllWishlist();
+    wishlists.push(product);
+    localStorage.setItem('wishlist', JSON.stringify(wishlists));
+    toast.success("Successfully added to your wishlist");
+}
+
+export{addCart, getAllCarts, addWishlist, getAllWishlist};
